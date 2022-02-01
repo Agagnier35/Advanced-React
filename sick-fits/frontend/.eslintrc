@@ -1,0 +1,17 @@
+{
+  "extends": ["wesbos", "plugin:import/typescript"],
+  "rules": {
+    "react/jsx-filename-extension": [1, {"extensions": [".tsx"]}],
+    "import/no-unresolved": "off"
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  }
+}
